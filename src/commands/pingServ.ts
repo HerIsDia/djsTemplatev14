@@ -23,5 +23,5 @@ module.exports = {
     name,
     command: command.toJSON(),
     run,
-    serversID: ["1014765028366360586"],
+    serversID: ["1014765028366360586"], // This server ID is a test server, for showing how this works.
 } as CommandHandler
