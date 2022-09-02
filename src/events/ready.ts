@@ -1,7 +1,8 @@
 import { Client } from 'discord.js';
+import { EventHandler } from '../types';
 require('dotenv').config();
 
-module.exports = {
+const event: EventHandler = {
     name: 'ready',
     once: true,
     run: (client: Client) => {
@@ -11,3 +12,5 @@ module.exports = {
         console.log(`Logged in as ${client.user.tag}!`);
     },
 };
+
+module.exports = event;
